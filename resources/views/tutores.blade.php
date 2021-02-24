@@ -45,10 +45,12 @@
                 <div class="col-4 form-group">
                     <label for="tipoDocumento">{{__('tutores_tipoDocumento')}}</label>
                     <input type="text" class="form-control" id="tipoDocumento" name="tipoDocumento" value="{{old('tipoDocumento')}}" required />
+                    <p class="text-warning small">{{$errors->first('tipoDocumento')}}</p>
                 </div>
                 <div class="col-8 form-group">
                     <label for="numDocumento">{{__('tutores_numDocumento')}}</label>
                     <input type="text" class="form-control" id="numDocumento" name="numDocumento" value="{{old('numDocumento')}}" required />
+                    <p class="text-warning small">{{$errors->first('numDocumento')}}</p>
                 </div>    
             </div>
             <div class="row">
