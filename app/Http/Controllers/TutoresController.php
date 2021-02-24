@@ -43,9 +43,6 @@ class TutoresController extends Controller
             'nombre'=>'required|min:2|max:16',
             'apellido1'=>'required|min:2',
             'numDocumento'=> 'required|unique:tutors',
-            'municipio' => 'max:16',
-            'provincia' => 'min:2|max:16',
-            'pais' => 'max:12',
             'telefono'=>'required|min:8',
             'email'=>'required|email:filter'
         ]);
