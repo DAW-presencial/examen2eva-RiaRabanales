@@ -87,7 +87,7 @@
                     <option value="noActivo" @if (old('estado') === 'noActivo') selected @endif>No activo</option>
                 </select>
             </div>
-            <div class="d-flex justify-content-between p-3">
+            <div class="d-flex justify-content-end p-3">
                 <button type="reset" class="btn btn-dark">Borrar</button>
                 <button type="submit" class="btn btn-dark">Enviar</button>    
             </div>
