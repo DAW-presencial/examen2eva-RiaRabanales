@@ -29,5 +29,21 @@
     "Before proceeding, please check your email for a verification link.": "Antes de poder continuar, por favor, confirma tu correo electrónico con el enlace que te hemos enviado.",
     "If you did not receive the email": "Si no has recibido el email",
     "click here to request another": "pulsa aquí para que te enviemos otro",
-    "All rights reserved.":  "Todos los derechos reservados."
+    "All rights reserved.":  "Todos los derechos reservados.",
+    "tutores_titulo": "Formulario de recogida de datos de tutores",
+    "tutores_errores": "Debe corregir los siguientes problemas:",
+    "tutores_empresa": "Nombre de la empresa",
+    "tutores_nombre": "Nombre del tutor",
+    "tutores_apellido1": "Primer apellido",
+    "tutores_apellido2": "Segundo apellido",
+    "tutores_tipoDocumento": "Tipo de documento",
+    "tutores_numDocumento": "Documento de identidad",
+    "tutores_municipio": "Municipio",
+    "tutores_provincia": "Provincia",
+    "tutores_pais": "País",
+    "tutores_telefono": "Teléfono",
+    "tutores_email": "E-mail",
+    "tutores_estado": "Estado del tutor",
+    "tutores_estadoActivo": "activo",
+    "tutores_estadoNoActivo": "no activo"
 }
