@@ -15,3 +15,6 @@ En la creación de la base de datos he considerado absolutamente necesarios sól
 * identificación
 * teléfono
 * e-mail
+
+
+El campo 'estado' hubiera sido, quizás, más interesante como un boolean (activo: true/false), pero por falta de tiempo no me da tiempo a modificarlo y, en cualquier caso, funciona bien como está y permite la introducción de más de dos valores.

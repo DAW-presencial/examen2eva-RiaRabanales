@@ -39,9 +39,12 @@ class TutoresController extends Controller
         $request->validate([
             'empresa'=>'required|min:2',
             //Por incluir alguna comprobación aparte del e-mail: quiero evitar las iniciales, así que se debe introducir un mínimo de 2 caracteres.
-            'nombre'=>'required|min:2',
+            'nombre'=>'required|min:2|max:16',
             'apellido1'=>'required|min:2',
             'numDocumento'=> 'required|unique:tutors',
+            'municipio' => 'max:16',
+            'provincia' => 'min:2|max:16',
+            'pais' => 'max:12',
             'telefono'=>'required|min:8',
             'email'=>'required|email:filter'
         ]);
