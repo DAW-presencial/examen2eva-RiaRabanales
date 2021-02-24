@@ -5,7 +5,7 @@ Desplegado en: rabanales.sytes.net
 
 Github en: https://github.com/DAW-presencial/examen2eva-RiaRabanales
 
-Dado que el enunciado no me indicaba que creara más vistas que la del formulario no he incluido ninguna más, pero he decidido añadir un mensaje de éxito cuando se ha realizado bien la inserción del nuevo tutor.
+Dado que el enunciado no me indicaba que creara más vistas que la del formulario no he incluido ninguna más, pero he decidido añadir un mensaje de éxito cuando se ha realizado bien la inserción del nuevo tutor. No obstante, al hacer el redirect este mensaje queda inutilizado.
 
 ## Base de datos
 He creado una base de datos nueva en postgresql (con mi usuario en la cuenta de FBMoll) llamada 'mrabanales_examen2eva'. 
