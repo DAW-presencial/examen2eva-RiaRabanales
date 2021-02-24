@@ -16,6 +16,15 @@
             @endif
         </p>
 
+        <!-- Aquí mi aviso de éxito cuando creo un tutor y lo guardo -->
+       <div class="text-warning">
+        @if(session()->get('success'))
+            <div class="alert alert-success">
+            {{ session()->get('success') }}  
+            </div>
+        @endif
+        </div>
+
         <!-- Aquí el formulario -->
         <form method="post" action="{{ route('tutores.store') }}">
             @csrf

@@ -9,6 +9,7 @@ use App\Http\Controllers\TutoresController;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', [TutoresController::class, 'create']);
+//Route::get('/', [TutoresController::class, 'create']);
+Route::redirect('/', '/tutores/create');
 
 Route::resource('tutores', TutoresController::class);
