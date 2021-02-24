@@ -26,6 +26,7 @@ class TutoresController extends Controller
     public function create()
     {
         return view('tutores');
+        //Devuelvo la única vista existente.
     }
 
     /**
@@ -86,7 +87,8 @@ class TutoresController extends Controller
      */
     public function edit($id)
     {
-        //
+        $tutor = Tutor::find($id);
+        //Si existiera la vista: return view('editTutor', compact('tutor'));
     }
 
     /**
@@ -98,7 +100,12 @@ class TutoresController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        /*
+        Proceso: incluiría la misma validación que en update
+        Luego: $tutor = Tutor::find($id);
+        Luego los $request
+        Finalmente: $tutor->save();
+        */
     }
 
     /**
@@ -109,6 +116,9 @@ class TutoresController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $tutor = Tutor::find($id);
+        $tutor->delete();
+
+        return redirect('/tutores')->with('success', 'Tutor eliminado.');
     }
 }

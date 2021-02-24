@@ -2,7 +2,10 @@
 
 Por María Rabanales para DWES.
 Desplegado en: rabanales.sytes.net 
+
 Github en: https://github.com/DAW-presencial/examen2eva-RiaRabanales
+
+Dado que el enunciado no me indicaba que creara más vistas que la del formulario no he incluido ninguna más, pero he decidido añadir un mensaje de éxito cuando se ha realizado bien la inserción del nuevo tutor.
 
 ## Base de datos
 He creado una base de datos nueva en postgresql (con mi usuario en la cuenta de FBMoll) llamada 'mrabanales_examen2eva'. 
@@ -18,3 +21,12 @@ En la creación de la base de datos he considerado absolutamente necesarios sól
 
 
 El campo 'estado' hubiera sido, quizás, más interesante como un boolean (activo: true/false), pero por falta de tiempo no me da tiempo a modificarlo y, en cualquier caso, funciona bien como está y permite la introducción de más de dos valores.
+
+## Rutas:
+Las rutas han sido relativamente simples: un redirect soluciona la tarea 10, y un resource la tarea 9.
+
+## Comandos empleados:
+Entre otros, he empleado los siguientes comandos para generar los archivos necesarios:
+* php artisan make:model Tutor --migration
+* php artisan migrate
+* php artisan make:controller TutorController --resource
