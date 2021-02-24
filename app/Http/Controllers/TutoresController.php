@@ -24,7 +24,7 @@ class TutoresController extends Controller
      */
     public function create()
     {
-        //
+        return view('tutores');
     }
 
     /**
@@ -35,7 +35,32 @@ class TutoresController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'empresa'=>'required',
+            'nombre'=>'required',
+            'apellido1'=>'required',
+            'numDocumento'=> 'required',
+            'telefono'=>'required',
+            'email'=>'required',
+            'activo'=>'required'
+        ]);
+
+        $tutor = new Tutor([
+            'empresa' => $request->get('empresa'),
+            'nombre' => $request->get('nombre'),
+            'apellido1' => $request->get('apellido1'),
+            'apellido2' => $request->get('apellido2'),
+            'tipoDocumento' => $request->get('tipoDocumento'),
+            'numDocumento' => $request->get('numDocumento'),
+            'municipio' => $request->get('municipio'),
+            'provincia' => $request->get('provincia'),
+            'pais' => $request->get('pais'),
+            'telefono' => $request->get('telefono'),
+            'email' => $request->get('email'),
+            'estado' => $request->get('estado')
+        ]);
+        $tutor->save();
+        return redirect('/')->with('success', 'Tutor guardado');
     }
 
     /**

@@ -27,12 +27,12 @@
             <div class="row">
                 <div class="col-4 form-group">
                     <label for="nombre"><strong>{{__('tutores_nombre')}}</strong></label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" value="{{old('nombre')}}" />
+                    <input type="text" class="form-control" id="nombre" name="nombre" value="{{old('nombre')}}" required />
                     <p class="text-warning small">{{$errors->first('nombre')}}</p>
                 </div>
                 <div class="col-4 form-group">
                     <label for="apellido1">{{__('tutores_apellido1')}}</label>
-                    <input type="text" class="form-control" id="apellido1" name="apellido1" value="{{old('apellido1')}}" />
+                    <input type="text" class="form-control" id="apellido1" name="apellido1" value="{{old('apellido1')}}" required/>
                     <p class="text-warning small">{{$errors->first('apellido1')}}
                 </div>
                 <div class="col-4 form-group">
@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-4 form-group">
                     <label for="tipoDocumento">{{__('tutores_tipoDocumento')}}</label>
-                    <input type="text" class="form-control" id="tipoDocumento" name="tipoDocumento" value="{{old('tipoDocumento')}}" required />
+                    <input type="text" class="form-control" id="tipoDocumento" name="tipoDocumento" value="{{old('tipoDocumento')}}" />
                     <p class="text-warning small">{{$errors->first('tipoDocumento')}}</p>
                 </div>
                 <div class="col-8 form-group">

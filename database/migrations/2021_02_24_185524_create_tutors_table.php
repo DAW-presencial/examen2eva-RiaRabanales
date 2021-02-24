@@ -16,10 +16,10 @@ class CreateTutorsTable extends Migration
         Schema::create('tutors', function (Blueprint $table) {
             $table->id();
             $table->string('empresa');
-            $table->string('tipoDocumento');
+            $table->string('tipoDocumento')->nullable();;
             $table->string('numDocumento')->unique();
-            $table->string('nombre')->nullable();
-            $table->string('apellido1')->nullable();
+            $table->string('nombre');
+            $table->string('apellido1');
             $table->string('apellido2')->nullable();
             $table->string('municipio')->nullable();
             $table->string('provincia')->nullable();

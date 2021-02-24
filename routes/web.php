@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TutoresController;
 
 /*
 |--------------------------------------------------------------------------
@@ -8,6 +9,6 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', function () {
-    return view('tutores');
-});
+Route::get('/', [TutoresController::class, 'create']);
+
+Route::resource('tutores', TutoresController::class);
