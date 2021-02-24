@@ -17,7 +17,7 @@
         </p>
 
         <!-- Aquí el formulario -->
-        <form>
+        <form method="post" action="{{ route('tutores.store') }}">
             @csrf
             <div class="form-group">
                 <label for="empresa"><b>{{__('tutores_empresa')}}</b></label>
@@ -73,12 +73,12 @@
             <div class="row">
                 <div class="col-6 form-group">
                     <label for="telefono">{{__('tutores_telefono')}}</label>
-                    <input type="text" class="form-control" id="telefono" name="telefono" value="{{old('telefono')}}" />
+                    <input type="text" class="form-control" id="telefono" name="telefono" value="{{old('telefono')}}" required />
                     <p class="text-warning small">{{$errors->first('telefono')}}</p>
                 </div>
                 <div class="col-6 form-group">
                     <label for="email">{{__('tutores_email')}}</label>
-                    <input type="text" class="form-control" id="email" name="email" value="{{old('email')}}" />
+                    <input type="text" class="form-control" id="email" name="email" value="{{old('email')}}" required />
                     <p class="text-warning small">{{$errors->first('email')}}
                 </div>
             </div>

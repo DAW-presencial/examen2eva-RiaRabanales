@@ -37,13 +37,13 @@ class TutoresController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'empresa'=>'required',
-            'nombre'=>'required',
-            'apellido1'=>'required',
-            'numDocumento'=> 'required',
-            'telefono'=>'required',
-            'email'=>'required',
-            'activo'=>'required'
+            'empresa'=>'required|min:2',
+            //Por incluir alguna comprobación aparte del e-mail: quiero evitar las iniciales
+            'nombre'=>'required|min:2',
+            'apellido1'=>'required|min:2',
+            'numDocumento'=> 'required|unique:tutors',
+            'telefono'=>'required|min:8',
+            'email'=>'required|email:filter'
         ]);
 
         $tutor = new Tutor([
