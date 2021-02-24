@@ -62,7 +62,7 @@ class TutoresController extends Controller
             'estado' => $request->get('estado')
         ]);
         $tutor->save();
-        return redirect('/')->with('success', 'Tutor guardado');
+        return redirect('/tutores/create')->with('success', 'Tutor guardado');
     }
 
     /**

@@ -5,7 +5,7 @@ Desplegado en: rabanales.sytes.net
 
 Github en: https://github.com/DAW-presencial/examen2eva-RiaRabanales
 
-Dado que el enunciado no me indicaba que creara más vistas que la del formulario no he incluido ninguna más, pero he decidido añadir un mensaje de éxito cuando se ha realizado bien la inserción del nuevo tutor. No obstante, al hacer el redirect este mensaje queda inutilizado.
+Dado que el enunciado no me indicaba que creara más vistas que la del formulario no he incluido ninguna más, pero he decidido añadir un mensaje de éxito cuando se ha realizado bien la inserción del nuevo tutor.
 
 En cualquier caso, al no crear ninguna vista aparte del formulario no las he incluído en el controlador, pero he añadido comentarios con lo que haría (y cómo lo haría) en cada uno de los casos.
 
